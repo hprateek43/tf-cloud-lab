@@ -11,7 +11,7 @@ terraform {
 
 resource "aws_instance" "app_server" {
   ami           = "ami-830c94e3"
-  instance_type = "t2.micro"
+  instance_type = "t2.large"
 
   tags = {
     Name = "My test server"
